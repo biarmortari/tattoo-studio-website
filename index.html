@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="stylesheet" href="./vendor/fonts.css" />
     <link rel="shortcut icon" href="./favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="page">
@@ -14,12 +18,69 @@
       <header class="header">
         <h1 class="header__title">ROQUE INK</h1>
         <nav class="header__nav">
-          <a class="header__link" href="#">ARTISTAS</a>
-          <a class="header__link" href="#">PORTFOLIO</a>
-          <a class="header__link" href="#">DISPONÍVEIS</a>
+          <a class="header__link" href="#">PORTFÓLIO</a>
+          <a class="header__link" href="#">CATÁLOGO</a>
           <a class="header__link" href="#">CONTATOS</a>
         </nav>
       </header>
+      <main class="main">
+        <section class="hero">
+          <div class="hero__content">
+            <h2 class="hero__title">SEJA BEM VINDO AO MEU MUNDO.</h2>
+            <h3 class="hero__subtitle">
+              Subtítulo do site que fala sobre o estúdio ou visão do artista
+              etc.
+            </h3>
+          </div>
+        </section>
+        <section class="portfolio">
+          <div class="filter__buttons">
+            <button class="filter__button" data-filter="all">Todos</button>
+            <button class="filter__button" data-filter="oldschool">
+              Old School
+            </button>
+            <button class="filter__button" data-filter="realismo">
+              Realismo
+            </button>
+            <button class="filter__button" data-filter="minimalista">
+              Minimalista
+            </button>
+          </div>
+
+          <div class="gallery">
+            <div class="gallery__item oldschool">
+              <img
+                class="item__image"
+                src="./images/portfolio/foto1.avif"
+                alt="Old School 1"
+              />
+            </div>
+            <div class="gallery__item realismo">
+              <img
+                class="item__image"
+                src="./images/portfolio/foto2.avif"
+                alt="Realismo 1"
+              />
+            </div>
+            <div class="gallery__item minimalista">
+              <img
+                class="item__image"
+                src="./images/portfolio/foto3.avif"
+                alt="Minimalista 1"
+              />
+            </div>
+            <div class="gallery__item oldschool">
+              <img
+                class="item__image"
+                src="./images/portfolio/foto4.avif"
+                alt="Old School 2"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"></footer>
+      <script src="./pages/index.js"></script>
     </div>
   </body>
 </html>

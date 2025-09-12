@@ -1,11 +1,11 @@
 .page {
   min-height: 100vh;
-  background: radial-gradient(ellipse at bottom, #0d1b2a, #000);
+  background: radial-gradient(ellipse at bottom, #000000, #000);
   overflow: hidden;
-  position: relative; /* importante para que .stars fique posicionada dentro */
+  position: relative;
 }
 
-.stars {
+/*.stars {
   position: absolute;
   top: 0;
   left: 0;
