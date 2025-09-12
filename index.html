@@ -2,7 +2,10 @@
 <html lang="pt">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1"
+    />
     <title>Roque Ink</title>
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="stylesheet" href="./vendor/fonts.css" />
@@ -13,6 +16,10 @@
     />
   </head>
   <body>
+    <div id="image-modal" class="modal hidden">
+      <span class="close-button">&times;</span>
+      <img class="modal-content" src="" alt="" />
+    </div>
     <div class="page">
       <div class="stars"></div>
       <header class="header">

@@ -32,7 +32,7 @@
   grid-template-rows: repeat(3, 200px);
   gap: 15px;
   margin: 0 auto;
-  max-width: fit-content;
+  max-width: 100%;
   padding: 20px 30px;
   height: 120vh;
 }
@@ -52,4 +52,12 @@
 
 .item__image:hover {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    height: auto;
+  }
 }
