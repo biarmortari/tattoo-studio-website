@@ -28,8 +28,13 @@
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 200px);
   gap: 15px;
+  margin: 0 auto;
+  max-width: fit-content;
+  padding: 20px 30px;
+  height: 120vh;
 }
 
 .gallery__item {
