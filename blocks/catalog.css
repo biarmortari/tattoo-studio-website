@@ -1,4 +1,4 @@
-.portfolio {
+.catalog {
   padding: 40px 20px;
 }
 
@@ -34,7 +34,7 @@
   margin: 0 auto;
   max-width: 100%;
   padding: 20px 30px;
-  height: 120vh;
+  height: auto;
 }
 
 .gallery__item {
