@@ -36,3 +36,16 @@ window.addEventListener("click", (event) => {
     modal.classList.remove("modal--active");
   }
 });
+
+// WhatsApp floating button functionality
+const phoneNumber = "5514998199528";
+const defaultMessage =
+  "Olá! Tenho uma ideia de projeto e gostaria de solicitar um orçamento.";
+
+(function setupWhatsappButton() {
+  const a = document.getElementById("whatsapp-float");
+
+  const encoded = encodeURIComponent(defaultMessage);
+  const href = `https://wa.me/${phoneNumber}?text=${encoded}`;
+  a.setAttribute("href", href);
+})();
