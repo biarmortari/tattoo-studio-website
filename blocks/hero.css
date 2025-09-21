@@ -26,3 +26,20 @@
   max-width: 500px;
   line-height: 1.5;
 }
+
+@media screen and (max-width: 468px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    height: 60vh;
+    padding: 50px 20px;
+  }
+
+  .hero__title {
+    font-size: 1.8rem;
+  }
+
+  .hero__subtitle {
+    font-size: 0.7rem;
+  }
+}
