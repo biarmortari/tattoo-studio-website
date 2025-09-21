@@ -91,3 +91,24 @@
     transform: translateX(0);
   }
 }
+
+@media screen and (max-width: 480px) {
+  .header__title {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  .header__link {
+    font-size: 0.8rem;
+  }
+
+  .header__nav {
+    gap: 0.5rem;
+    margin-right: 1rem;
+  }
+
+  .header__nav-list {
+    width: 100vw;
+    right: -40px;
+  }
+}
