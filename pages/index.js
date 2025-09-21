@@ -49,3 +49,11 @@ const defaultMessage =
   const href = `https://wa.me/${phoneNumber}?text=${encoded}`;
   a.setAttribute("href", href);
 })();
+
+// Mobile navigation functionality
+const burger = document.querySelector(".header__nav-burger");
+const nav = document.querySelector(".header__nav-list");
+
+burger.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
