@@ -2,6 +2,15 @@
   padding: 40px 20px;
 }
 
+.catalog__subtitle {
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #c7c7c7c7;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .filter__buttons {
   text-align: center;
   margin-bottom: 20px;
@@ -11,7 +20,7 @@
   background: #222;
   color: #fff;
   border: none;
-  padding: 10px 18px;
+  padding: 5px 18px;
   margin: 5px;
   border-radius: 8px;
   cursor: pointer;
@@ -38,6 +47,7 @@
 }
 
 .gallery__item {
+  position: relative;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -50,14 +60,52 @@
   transition: transform 0.4s;
 }
 
-.item__image:hover {
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 10px;
+  pointer-events: none;
+}
+
+.gallery__item:hover .overlay {
+  opacity: 1;
+}
+
+.gallery__item:hover .item__image {
   transform: scale(1.1);
+  filter: brightness(0.2);
+}
+
+@media screen and (max-width: 1024px) {
+  .gallery__item {
+    height: 18vh;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
   .gallery {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    height: auto;
+    height: 50vh;
+  }
+
+  .overlay {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.4); /
+  }
+
+  .gallery__item .item__image {
+    filter: brightness(
+      0.7
+    );
   }
 }
