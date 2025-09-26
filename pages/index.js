@@ -1,3 +1,4 @@
+// Filter functionality
 const buttons = document.querySelectorAll(".filter__buttons button");
 const items = document.querySelectorAll(".gallery__item");
 
@@ -56,4 +57,10 @@ const nav = document.querySelector(".header__nav-list");
 
 burger.addEventListener("click", () => {
   nav.classList.toggle("active");
+});
+
+nav.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("active");
+  });
 });
