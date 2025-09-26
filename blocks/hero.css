@@ -7,8 +7,7 @@
     url("/images/hero-image.jpg");
   background-size: cover;
   background-position: center;
-  height: 500px;
-  text-shadow: 2px 2px 4px #ffffff(0, 0, 0, 0.8);
+  height: 80vh;
 }
 
 .hero__title {
