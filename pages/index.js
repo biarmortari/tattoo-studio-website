@@ -64,3 +64,32 @@ nav.querySelectorAll("a").forEach((link) => {
     nav.classList.remove("active");
   });
 });
+
+// Swiper.js functionality
+const swiper = new Swiper(".mySwiper", {
+  loop: true,
+
+  speed: 2000,
+
+  autoplay: {
+    delay: 500,
+    disableOnInteraction: true,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  // Responsividade (Breakpoints):
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+  },
+});
