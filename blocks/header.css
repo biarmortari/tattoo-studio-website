@@ -46,7 +46,7 @@
   transition: 0.4s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
   .header__nav-wrapper {
     display: flex;
   }
