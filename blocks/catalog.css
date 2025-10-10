@@ -1,0 +1,178 @@
+.catalog {
+  padding: 40px 20px;
+}
+
+.catalog__subtitle {
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #c7c7c7c7;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.filter__buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter__button {
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 5px 18px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+}
+
+.filter__button:hover,
+.filter__buttons button.active {
+  background: #e63946;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 15px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 20px 30px;
+  height: auto;
+}
+
+.gallery__item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.image-container {
+  aspect-ratio: 3/4;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+
+.item__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 10px;
+  pointer-events: none;
+  font-family: "Orbitron", sans-serif;
+}
+
+.overlay__title {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.overlay__subtitle {
+  font-size: 1rem;
+  margin: 4px 0;
+}
+
+.gallery__item:hover .overlay {
+  opacity: 1;
+}
+
+.gallery__item:hover .item__image {
+  transform: scale(1.1);
+  filter: brightness(0.2);
+}
+
+@media screen and (max-width: 1024px) {
+  .gallery__item {
+    height: 18vh;
+  }
+
+  .overlay__title {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+
+  .overlay__subtitle {
+    font-size: 0.8rem;
+    margin: 4px 0;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .gallery__item {
+    overflow: visible;
+    height: auto;
+  }
+
+  .overlay {
+    position: static;
+    inset: auto;
+    display: block;
+    opacity: 1;
+    background: transparent;
+    color: #c7c7c7c7;
+    padding: 8px 0 0;
+    text-align: center;
+  }
+
+  .overlay__title {
+    color: #e7e7e7;
+    font-size: 1.2rem;
+    margin: 10px auto;
+  }
+
+  .overlay__subtitle {
+    font-size: 0.8rem;
+    margin: 10px 0;
+  }
+
+  .gallery__item:hover .item__image {
+    transform: none;
+    filter: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+  }
+
+  .image-container {
+    aspect-ratio: 4/4;
+  }
+
+  .overlay__title {
+    font-size: 1.5rem;
+  }
+
+  .overlay__subtitle {
+    font-size: 1rem;
+  }
+}
