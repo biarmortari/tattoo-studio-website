@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   new WhatsappButton(
     "whatsapp-float",
-    "5514998199528",
+    "5511971927873",
     "Olá! Tenho uma ideia de projeto e gostaria de solicitar um orçamento."
   );
 
