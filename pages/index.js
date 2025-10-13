@@ -1,6 +1,7 @@
 import GalleryFilter from "../src/components/GalleryFilter.js";
 import ImageModal from "../src/components/ImageModal.js";
 import WhatsappButton from "../src/components/WhatsappButton.js";
+import MobileNav from "../src/components/MobileNav.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   new GalleryFilter(".filter__buttons button", ".gallery__item");
@@ -12,6 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "5514998199528",
     "Olá! Tenho uma ideia de projeto e gostaria de solicitar um orçamento."
   );
+
+  new MobileNav(".header__nav-burger", ".header__nav-list");
 
   new Swiper(".mySwiper", {
     loop: true,
