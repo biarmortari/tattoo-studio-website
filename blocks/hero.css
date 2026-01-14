@@ -10,6 +10,10 @@
   height: 80vh;
 }
 
+.hero__content {
+  max-width: 50vw;
+}
+
 .hero__title {
   font-family: "Krona One", sans-serif;
   font-size: 3rem;
